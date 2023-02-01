@@ -26,7 +26,8 @@ jobs:
 #        go get .
 
     - name: Build
-      run: |
+      with: |
         - mc install
         - wget install
+        - cd edm/cmd/edm
         
