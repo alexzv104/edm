@@ -27,8 +27,9 @@ jobs:
 
     - name: Build
       run: |
-        - go build -v ./...
-        - go get ./...
+        - cd ~/home/edm/cmd/edm
+        - go build -v .
+        - go get .
 
     - name: Test
       run: go test -v ./...
