@@ -26,7 +26,7 @@ jobs:
 #        go get .
 
     - name: Build
-      shell: |
+      uses: |
         - cd ~/home/edm/cmd/edm
 
 
