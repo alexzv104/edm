@@ -27,5 +27,6 @@ jobs:
 
     - name: Build
       run: |
-        - mc
-        - wget
+        - mc install
+        - wget install
+        
