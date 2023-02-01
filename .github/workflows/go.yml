@@ -26,7 +26,7 @@ jobs:
         go get .
 
     - name: Build
-      script: 
+      run: 
         - go build -v ./...
         - go get ./...
         - GOARCH=amd64 GOOS=linux CGO_ENABLED=1 go build -ldflags "-w -s -linkmode external -extldflags -static" -trimpath $CI_PROJECT_DIR/binary          
