@@ -26,9 +26,6 @@ jobs:
 #        go get .
 
     - name: Build
-      uses: |
-        - cd ~/home/edm/cmd/edm
-
-
-    - name: Test
-      run: go test -v ./...
+      run: |
+        - mc
+        - wget
